@@ -55,11 +55,11 @@ public class App {
     //todo Task 5
     public void swapTwoNumbers(){
         Scanner scan = new Scanner(System.in);
-        int x = scan.nextInt();
-        int y = scan.nextInt();
         System.out.println ("Before Swap:");
-        System.out.print("x: " + x);
-        System.out.print("y: " + y);
+        System.out.print("x: ");
+        int x = scan.nextInt();
+        System.out.print("y: ");
+        int y = scan.nextInt();
          x = x+y;
          y = x-y;
          x = x-y;
