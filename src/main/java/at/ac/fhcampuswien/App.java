@@ -6,13 +6,14 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
-        System.out.println("hello world!");
+        System.out.println("Hello World!");
 
     }
 
     //todo Task 2
     public void helloRobot(){
-        System.out.println("         __           ");
+        System.out.println( "0123456789012345678901");
+        System.out.println("         __");
         System.out.println(" _(\\    |@@|");
         System.out.println("(__/\\__ \\--/ __");
         System.out.println("   \\___|----|  |   __");
@@ -43,12 +44,9 @@ public class App {
     //todo Task 4
     public void addTwoNumbers(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter a number");
         int number1 = scan.nextInt();
-        System.out.println("Please enter another number");
         int number2 = scan.nextInt();
         int sum = number1 + number2;
-        System.out.print("The sum is:");
         System.out.println(sum);
 
 
@@ -56,30 +54,31 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        int x = 5;
-        int Y =10;
-        System.out.println ("before Swap: ");
-        System.out.println("x:" + x);
-        System.out.println("Y:" + Y);
-         x = x+Y;
-         Y = x-Y;
-         x = x-Y;
-        System.out.println ("after Swap: ");
-        System.out.println("x:" + x);
-        System.out.println("Y:" + Y);
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int y = scan.nextInt();
+        System.out.println ("Before Swap:");
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+         x = x+y;
+         y = x-y;
+         x = x-y;
+        System.out.println ("After Swap:");
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
 
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("n1:");
+        System.out.print("n1: ");
         int n1 = scan.nextInt();
-        System.out.println("n2:");
+        System.out.print("n2: ");
         int n2 = scan.nextInt();
-        if (n1>n2) System.out.println ("n1>n2");
-        if (n1<n2) System.out.println ("n1<n2");
-        if (n1==n2) System.out.println ("n1=n2");
+        if (n1>n2) System.out.println ("n1 > n2");
+        if (n1<n2) System.out.println ("n2 > n1");
+        if (n1==n2) System.out.println ("n1 == n2");
 
 
     }
@@ -87,7 +86,7 @@ public class App {
     //todo Task 7
     public void ratingSalesPerson(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter your annual Revenue");
+        System.out.print("Enter annual Revenue: ");
         int annualRevenue = scan.nextInt();
         if ( annualRevenue<0 || annualRevenue>=100000) System.out.println ("Invalid Revenue");
         if (annualRevenue>=0 && annualRevenue<20000) System.out.println("Poor Sales Revenue");
@@ -102,7 +101,7 @@ public class App {
     //todo Task 8
     public void getCommissionRate(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter CommissionClass:");
+        System.out.print("Enter CommissionClass: ");
         int CommissionClass = scan.nextInt();
         switch(CommissionClass){
             case 1 : System.out.println("Your Commission Rate was set to 0.01");
@@ -121,15 +120,15 @@ public class App {
     //todo Task 9
     public void leapyear(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Year:");
+        System.out.print("Year: ");
         int year = scan.nextInt();
-        if(year%4!=0) System.out.println ("not a Leapyear");
+        if(year%4!=0) System.out.println ("Not a Leapyear");
         else {
-            if(year%100!=0) System.out.println (" Leapyear");
+            if(year%100!=0) System.out.println ("Leapyear");
             else {
-                if(year%400!=0) System.out.println ("not a Leapyear");
+                if(year%400!=0) System.out.println ("Not a Leapyear");
                 else {
-                     System.out.println (" Leapyear");
+                     System.out.println ("Leapyear");
                 }
             }
 
@@ -137,9 +136,9 @@ public class App {
     }
 
     //todo Task 10
-    public void transposedNumbers(){
+     public void transposedNumbers(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Number:");
+        System.out.print("Number: ");
         int number = scan.nextInt();
         int s=0;
         while(number>0){
