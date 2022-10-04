@@ -58,8 +58,8 @@ public class App {
         int x = scan.nextInt();
         int y = scan.nextInt();
         System.out.println ("Before Swap:");
-        System.out.println("x: " + x);
-        System.out.println("y: " + y);
+        System.out.print("x: " + x);
+        System.out.print("y: " + y);
          x = x+y;
          y = x-y;
          x = x-y;
@@ -112,7 +112,7 @@ public class App {
                 break;
             case 4 : System.out.println("Your Commission Rate was set to 0.04");
                 break;
-            default : System.out.println("Your Commission Rate was set to 0.00");
+            default : System.out.println("Your Commission Rate was set to 0.0");
         }
 
     }
